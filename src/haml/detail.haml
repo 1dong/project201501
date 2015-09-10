@@ -1,0 +1,49 @@
+!!! 5
+%html
+  %head
+    %title 宝贝钱罐
+    %meta(charset="utf-8")
+    %meta(name="viewport" content="width=device-width,height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+    %link(href="../css/normalize.css" type="text/css" rel="stylesheet")
+    %link(href="../css/index.css" type="text/css" rel="stylesheet")
+    %script(src="../js/jquery-1.11.2.min.js" type="text/javascript")
+    %script(src="../js/count.min.js" type="text/javascript")
+    %script(src="../js/index.js" type="text/javascript")
+  %body
+    .container.bg3
+      .close
+
+      .total
+        .total_num_wrap
+          .total_num
+            %span.label 总额
+              %i ￥
+            %span.integer#count_animate 2350
+            %i.dot .
+            %span.decimal#decimal_animate 00
+      %table.table
+        %thead
+          %tr
+            %th 时间
+            %th 来源
+            %th 金额
+        %tbody
+          %tr
+            %td 2015
+            %td 爸爸
+            %td ￥500
+          %tr
+            %td 2015
+            %td 爸爸
+            %td ￥500
+          %tr
+            %td 2015
+            %td 爸爸
+            %td ￥500
+          %tr
+            %td 2015
+            %td 爸爸
+            %td ￥500
+      .shading
+
+

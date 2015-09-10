@@ -1,0 +1,92 @@
+!!! 5
+%html
+  %head
+    %title 宝贝钱罐
+    %meta(charset="utf-8")
+    %meta(name="viewport" content="width=device-width,height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+    %link(href="../css/normalize.css" type="text/css" rel="stylesheet")
+    %link(href="../css/index.css" type="text/css" rel="stylesheet")
+    %script(src="../js/jquery-1.11.2.min.js" type="text/javascript")
+    %script(src="../js/index.js" type="text/javascript")
+  %body
+    .container.bg2
+      .head
+        .nav-wrap
+          .nav
+            %a.nav_left(href="exchange.html") 兑换
+            %a.nav_right.active(href="index2.html") 记录
+        .close
+
+      .coin_bar
+        .coin_num
+          %p 2,040
+          %span 当前小猪币
+
+      .store_tip
+        每存满50元送20小猪币
+        %a 立即存入
+
+      .store_bar
+        .img_wrap
+          %img.img-responsive(src="../images/quan.png")
+        .store_num_bar
+          %p 兑换金额
+          .num_buttom
+            %button.minus
+            %input.num(value="1")
+            %button.plus
+        .store_num_bar.border_none
+          %p.left 消耗小猪币
+          .use_num.right 10个
+        .long_buttom.width80
+          .decoration
+          .word_wrap
+            %a#exchange_button 立即兑换
+      .rule_wrap
+        .rule
+          %h3 兑换规则
+          %ol
+            %li 兑换红包后，将扣除对应数额的小猪币；
+            %li 兑换红包后，需存入一元，将红包存入宝贝存钱罐 ;
+            %li 如未完成支付流程或支付失败，请从微信服务号点击消息链接，再次进入并完成支付。
+
+    .popups#popups
+      .pop_close
+      .center_wrap
+        .center
+          .position_re
+            %img.img-responsive(src="../images/pig.png")
+            %p
+              是否消费
+              %span.gold 300个
+              小猪币
+              %br
+              兑换压岁钱红包
+              %span.gold 30元
+
+          .long_buttom.fullwidth
+            .decoration
+            .word_wrap
+              %a 确定
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
